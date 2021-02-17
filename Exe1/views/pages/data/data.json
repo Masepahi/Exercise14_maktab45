@@ -1,0 +1,50 @@
+[
+    {
+        "avatar": "1",
+        "id": "1",
+        "title": "Adiddas",
+        "color": "Red",
+        "size": "43",
+        "price": "290,000T"
+    },
+    {
+        "avatar": "2",
+        "id": "2",
+        "title": "Adiddas",
+        "color": "light Blue",
+        "size": "42",
+        "price": "290,000T"
+    },
+    {
+        "avatar": "3",
+        "id": "3",
+        "title": "Adiddas",
+        "color": "Black",
+        "size": "44",
+        "price": "290,000T"
+    },
+    {
+        "avatar": "4",
+        "id": "4",
+        "title": "Nike",
+        "color": "Black",
+        "size": "43",
+        "price": "290,000T"
+    },
+    {
+        "avatar": "5",
+        "id": "5",
+        "title": "Nike",
+        "color": "Blue",
+        "size": "43",
+        "price": "290,000T"
+    },
+    {
+        "avatar": "6",
+        "id": "6",
+        "title": "Nike",
+        "color": "Pink",
+        "size": "43",
+        "price": "290,000T"
+    }
+]
