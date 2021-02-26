@@ -2,8 +2,6 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const homeRouter = require('./router/homeRouter');
-const aboutRouter = require('./router/aboutRouter');
-const contactRouter = require('./router/contactRouter');
 const productRouter = require('./router/productRouter');
 const app = express();
 const port = 5005;
@@ -20,12 +18,13 @@ app.set('view engine', 'ejs');
 
 app.use('/', homeRouter);
 
-aboutRouter.get('/about', (req, res) => {
+app.get('/about', (req, res) => {
+    console.log(req.params.id);
     res.render('./pages/about');
 
 });
 
-contactRouter.get('/contact', (req, res) => {
+app.get('/contact', (req, res) => {
     res.render('./pages/contact');
 
 });
