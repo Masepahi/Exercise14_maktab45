@@ -1,44 +1,38 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
-const parser = require('body-parser')
+const homeRouter = require('./router/homeRouter');
+const aboutRouter = require('./router/aboutRouter');
+const contactRouter = require('./router/contactRouter');
+const productRouter = require('./router/productRouter');
 const app = express();
 const port = 5005;
 
+app.use(express.static(path.join(__dirname, '/views')))
+
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.set('views', path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
 
-let data = fs.readFileSync('./views/pages/data/data.json', 'utf-8');
 
+app.use('/', homeRouter);
 
-app.get('/', (req, res) => {
-    res.render('./pages/home', {data:JSON.parse(data)});
-});
-
-// app.get("/:id", (req, res) => {
-//     console.log(req.params.id);
-    
-//     data = JSON.parse(data);
-//     user = data.find(x => x.id == req.params.id);
-
-
-//     if (!user) return res.status(404).send("User not found!!!");
-    
-    
-//     res.render('pages/home', user);
-// })
-
-
-app.get('/about', (req, res) => {
+aboutRouter.get('/about', (req, res) => {
     res.render('./pages/about');
 
-})
+});
 
-app.get('/contact', (req, res) => {
+contactRouter.get('/contact', (req, res) => {
     res.render('./pages/contact');
 
-})
+});
+
+app.use('/products', productRouter);
+
+
 
 
 app.listen(port, (req, res) => {

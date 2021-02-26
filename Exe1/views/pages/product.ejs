@@ -16,13 +16,12 @@
     <div class="container my-12 mx-auto px-4 md:px-12">
       <div class="flex flex-wrap -mx-1 lg:-mx-4">
         <div class="grid grid-cols-3 gap-4">
-          <% for (let i = 0; i < products.length; i++) { %>
           <article class="overflow-hidden rounded-lg shadow-lg bg-gray-300">
             <a href="#">
               <img
                 alt="Placeholder"
                 class="block h-auto w-full"
-                src="<%= products[i].avatar %>"
+                src="<%= product.avatar %>"
               />
             </a>
             <header
@@ -32,7 +31,7 @@
                 <a
                   class="no-underline hover:underline text-black text-3xl text-gray-900"
                   href="#"
-                  ><%= products[i].title %></a
+                  ><%= product.title %></a
                 >
               </h1>
             </header>
@@ -40,20 +39,12 @@
               class="flex items-center justify-between leading-none p-2 md:p-4"
             >
               <ul>
-                <li class="text-1xl mb-8 text-gray-900">Color: <%= products[i].color %></li>
-                <li class="text-1xl mb-8 text-gray-900">Size: <%= products[i].size %></li>
-                <li class="text-1xl mb-8 text-gray-900">Price: <%= products[i].price %></li>
+                <li class="text-1xl mb-8 text-gray-900">Color: <%= product.color %></li>
+                <li class="text-1xl mb-8 text-gray-900">Size: <%= product.size %></li>
+                <li class="text-1xl mb-8 text-gray-900">Price: <%= product.price %></li>
               </ul>
-              <button
-                id="<%= products[i].id %>"
-                href= '/products/product<%=products[i].id %> '
-                class="moreBtn p-2 my-2 bg-indigo-500 text-white rounded-md focus:outline-none focus:ring-2 ring-blue-300 ring-offset-2 mr-8 scale-95" id='<%= products[i].id %>' href='http://localhost:5005/:id'
-              >
-                More Info
-              </button>
             </footer>
           </article>
-          <% } %>
         </div>
       </div>
     </div>

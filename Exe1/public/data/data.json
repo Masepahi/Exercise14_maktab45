@@ -1,6 +1,6 @@
 [
     {
-        "avatar": "1",
+        "avatar": "img/1.jpg",
         "id": "1",
         "title": "Adiddas",
         "color": "Red",
@@ -8,7 +8,7 @@
         "price": "290,000T"
     },
     {
-        "avatar": "2",
+        "avatar": "img/2.jpg",
         "id": "2",
         "title": "Adiddas",
         "color": "light Blue",
@@ -16,7 +16,7 @@
         "price": "290,000T"
     },
     {
-        "avatar": "3",
+        "avatar": "img/3.jpg",
         "id": "3",
         "title": "Adiddas",
         "color": "Black",
@@ -24,7 +24,7 @@
         "price": "290,000T"
     },
     {
-        "avatar": "4",
+        "avatar": "img/4.jpg",
         "id": "4",
         "title": "Nike",
         "color": "Black",
@@ -32,7 +32,7 @@
         "price": "290,000T"
     },
     {
-        "avatar": "5",
+        "avatar": "img/5.jpg",
         "id": "5",
         "title": "Nike",
         "color": "Blue",
@@ -40,7 +40,7 @@
         "price": "290,000T"
     },
     {
-        "avatar": "6",
+        "avatar": "img/6.jpg",
         "id": "6",
         "title": "Nike",
         "color": "Pink",
